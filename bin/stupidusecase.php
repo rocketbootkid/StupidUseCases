@@ -1,3 +1,11 @@
+<html>
+
+<head>
+<title>Stupid Use Case Generator</title>
+</head>
+
+<body>
+
 <?php
 
 echo "As a " . adjective() . " " . noun() . " I want to " . adverb() . " " . verb() . " " . noun() . "s so that I can " . verb() . " " . adjective() . " " . noun() . "s.";
@@ -38,5 +46,8 @@ function verb() {
 	
 }
 
-
 ?>
+
+</body>
+
+</html>
