@@ -157,7 +157,6 @@ mortally
 mostly
 mysteriously
 naturally
-adverbs describe or indicate the degree of action verbs, adjectives, or other adverbs.
 hopelessly
 hourly
 hungrily
@@ -317,8 +316,6 @@ tremendously
 triumphantly
 truly
 truthfully
-List of Adverbs
-adverbs describe or indicate the degree of action verbs, adjectives, or other adverbs.
 rightfully
 scarcely
 searchingly

@@ -8,7 +8,34 @@
 
 <?php
 
-echo "As a " . adjective() . " " . noun() . " I want to " . adverb() . " " . verb() . " " . noun() . "s so that I can " . verb() . " " . adjective() . " " . noun() . "s.";
+echo "As a";
+
+$adj = adjective();
+if (substr($adj, 0, 1) == "a" || substr($adj, 0, 1) == "e" || substr($adj, 0, 1) == "i" || substr($adj, 0, 1) == "o" || substr($adj, 0, 1) == "u") {
+	echo "n " . $adj;
+} else {
+	echo " " . $adj;
+}
+ 
+echo " " . noun() . " I want to " . adverb() . " " . verb() . " ";
+
+$noun = noun();
+if (substr($noun, -1) == "s") {
+	echo $noun . "e";
+} else {
+	echo $noun;
+}
+
+echo "s so that I can " . verb() . " " . adjective() . " ";
+
+$noun = noun();
+if (substr($noun, -1) == "s") {
+	echo $noun . "e";
+} else {
+	echo $noun;
+}
+
+echo "s.";
 
 function noun() {
 	
