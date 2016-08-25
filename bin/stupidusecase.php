@@ -29,7 +29,7 @@ if (substr($noun, -1) == "s") {
 echo "s so that I can " . verb() . " " . adjective() . " ";
 
 $noun = noun();
-if (substr($noun, -1) == "s") {
+if (substr($noun, -1) == "s" || substr($noun, -1) == "h") {
 	echo $noun . "e";
 } else {
 	echo $noun;
@@ -41,7 +41,7 @@ function noun() {
 	
 	$nouns = file('lists/nouns.txt');
 	$countNouns = count($nouns) - 1;
-	
+	srand();
 	return trim($nouns[rand(0, $countNouns)]);
 	
 }
@@ -50,7 +50,7 @@ function adjective() {
 
 	$adjectives = file('lists/adjectives.txt');
 	$countAdjectives = count($adjectives) - 1;
-	
+	srand();
 	return trim($adjectives[rand(0, $countAdjectives)]);	
 	
 }
@@ -59,7 +59,7 @@ function adverb() {
 
 	$adverbs = file('lists/adverbs.txt');
 	$countAdverbs = count($adverbs) - 1;
-	
+	srand();
 	return trim($adverbs[rand(0, $countAdverbs)]);	
 	
 }
@@ -68,7 +68,7 @@ function verb() {
 
 	$verbs = file('lists/verbs.txt');
 	$countVerbs = count($verbs) - 1;
-	
+	srand();
 	return trim($verbs[rand(0, $countVerbs)]);
 	
 }
