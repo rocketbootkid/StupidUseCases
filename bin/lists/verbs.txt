@@ -21,7 +21,8 @@ argue
 arrange
 arrest
 arrive
-ask	attach
+ask	
+attach
 attack
 attempt
 attend
