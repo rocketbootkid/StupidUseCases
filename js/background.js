@@ -93,9 +93,9 @@ function moveContent() {
 function drawBraces() {
 	
 	size = document.getElementById("content").clientHeight;
-	top_left_x = Math.ceil(0.30 * window.innerWidth);
+	top_left_x = Math.ceil(window.innerWidth/2 - 350);
 	top_left_y = Math.ceil(0.20 * window.innerHeight);
-	top_right_x = Math.ceil(0.70 * window.innerWidth);
+	top_right_x = Math.ceil(window.innerWidth/2 + 350);
 
 	// Left Brace
 	context.beginPath();

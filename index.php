@@ -24,7 +24,8 @@
     <body>
 		<div id="content">
 			<?php
-				doThings();
+				$text = doThings();
+				echo $text;
 			?>
 		</div>
 		<canvas id="myCanvas" width="2000" height="1000"></canvas>
